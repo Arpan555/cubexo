@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+ {% extends 'testapp/baseprofile.html' %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/demo.css' %}" />
+{% block content %}
+
+<h1>dsgg</h1>
+<div id="balanceButtons">
+    <div>
+        <button class="btn btn-success">Credit</button>
+    </div>
+    <div>
+        <button class="btn btn-succes">Debit</button>
+    </div>
+
+</div>  
+
+{% endblock %}

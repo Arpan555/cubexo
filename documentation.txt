@@ -1,0 +1,10 @@
+this is web based application its name is expence tracker app..
+i used python and django for backend and HTML5 , CSS3 , JS , BOOTSTRAP4 and jQuery .
+we make a register page and login thats use we can create a user to use this app , after register login and ready to add cash and withdraw case in your wallet .. 
+i used Bootstrap to make a modal like credit and deposite amount and form like register and sign up page...
+i used django messages to make validations ..
+
+super user is:- admin
+password :- admin
+
+

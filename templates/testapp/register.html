@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+{%block body_block%}
+
+    <div style="width: 50%;margin: 50px auto;">
+        <form action="{% url 'signup' %}" method="post" enctype="multipart/form-data" name="registrationForm" #registrationForm>{% csrf_token %}
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" name="name" id="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="mob_no">Mobile No.</label>
+                <input type="tel" class="form-control" name="mob_no" id="mob_no">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" name="password" class="form-control" id="password">
+            </div>
+            
+            <button type="submit" class="btn btn-primary" (click)="onSubmit($event)">Register</button>
+          </form>
+    </div>
+
+    <script>
+        
+    </script>
+{%endblock%}
